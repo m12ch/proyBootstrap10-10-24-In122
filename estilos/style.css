@@ -1,0 +1,194 @@
+.padre{
+    background-color: azure;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "cont1 cont2 cont3"
+                          "foot foot foot";
+    /*align-items: center;*/
+    gap: 5px;
+}
+.padre .header{
+    grid-area: header;
+}
+.padre .nav{
+    grid-area: nav;
+}
+.padre .cont1{
+    grid-area: cont1;
+}
+.padre .cont2{
+    grid-area: cont2;
+}
+.padre .cont3{
+    grid-area: cont3;
+}
+.padre .foot{
+    grid-area: foot;
+}
+/*ESTILO PAGINA BIOGRAFIA*/
+.padrebio{
+    background-color: azure;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "cont1 cont1 cont2"
+                          "cont1 cont1 cont3"
+                          "foot foot foot";
+    /*align-items: center;*/
+    gap: 5px;
+}
+.padrebio .header{
+    grid-area: header;
+}
+.padrebio .nav{
+    grid-area: nav;
+}
+.padrebio .cont1{
+    grid-area: cont1;
+    grid-row: cont1;
+}
+.padrebio .cont1 .ptext{
+    text-align: justify;
+}
+.padrebio .cont2{
+    grid-area: cont2;
+}
+.padrebio .cont3{
+    grid-area: cont3;
+}
+.padrebio .foot{
+    grid-area: foot;
+}
+/*ESTILO PAGINA CARRERA*/
+.padreCarr{
+    background-color: azure;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "cont1 cont3 cont3"
+                          "cont2 cont3 cont3"
+                          "foot foot foot";
+    /*align-items: center;*/
+    gap: 5px;
+}
+.padreCarr .header{
+    grid-area: header;
+}
+.padreCarr .nav{
+    grid-area: nav;
+}
+.padreCarr .cont1{
+    grid-area: cont1;
+}
+.padreCarr .cont2{
+    grid-area: cont2;
+}
+.padreCarr .cont3{
+    grid-area: cont3;
+    grid-row: cont3;
+}
+.padreCarr .cont3 .hcarr{
+    text-align: center;
+}
+.padreCarr .cont3 .ptext{
+    text-align: justify;
+}
+.padreCarr .foot{
+    grid-area: foot;
+}
+/*ESTILO PAGINA MATERIAS*/
+.padremat{
+    background-color: azure;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "cont1 cont2 cont3"
+                          "foot foot foot";
+    /*align-items: center;*/
+    gap: 5px;
+}
+.padremat .header{
+    grid-area: header;
+}
+.padremat .nav{
+    grid-area: nav;
+}
+.padremat .cont1{
+    grid-area: cont1;
+}
+.padremat .cont2{
+    grid-area: cont2;
+}
+.padremat .cont3{
+    grid-area: cont3;
+}
+.padremat .foot{
+    grid-area: foot;
+}
+@media screen and(max-width:720px){
+    .padre{
+        background-color: azure;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: "header header"
+                              "nav nav"
+                              "cont1 cont1"
+                              "cont2 cont2"
+                              "cont3 cont3"
+                              "foot foot ";
+        /*align-items: center;*/
+        gap: 5px;
+    }
+    .padrebio{
+        background-color: azure;
+        padding: 5px;
+        display: grid;
+        grid-template-columns:  2fr 2fr;
+        grid-template-areas: "header header"
+                              "nav nav"
+                              "cont1 cont1"
+                              "cont2 cont2"
+                              "cont3 cont3"
+                              "foot foot";
+        /*align-items: center;*/
+        gap: 5px;
+    }
+    .padreCarr{
+        background-color: azure;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: "header header"
+                              "nav nav"
+                              "cont1 cont1"
+                              "cont2 cont2"
+                              "cont3 cont3"
+                              "foot foot ";
+        /*align-items: center;*/
+        gap: 5px;
+    }
+    .padremat{
+        background-color: azure;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "headerr"
+                              "nav"
+                              "cont1"
+                              "cont2"
+                              "cont3"
+                              "foot";
+        /*align-items: center;*/
+        gap: 5px;
+    }
+}
